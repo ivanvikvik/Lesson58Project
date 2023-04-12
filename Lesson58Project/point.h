@@ -14,9 +14,9 @@ public:
 	int get_y();
 	void set_y(int value);
 
-	Point sum(Point p1, Point p2);
-	Point sub(Point p1, Point p2);
-	Point mul(Point p1, int value);
+	Point sum(Point point);
+	Point sub(Point point);
+	Point mul(int value);
 
 	string info();
 };

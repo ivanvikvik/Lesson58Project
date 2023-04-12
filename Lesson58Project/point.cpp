@@ -28,20 +28,20 @@ string Point::info() {
 	return msg;
 }
 
-Point Point::sum(Point p1, Point p2) {
-	int x = p1.x + p2.x;
-	int y = p1.y + p2.y;
-	return Point(x, y);
+Point Point::sum(Point point) {
+	int x1 = x + point.x;
+	int y1 = y + point.y;
+	return Point(x1, y1);
 }
 
-Point Point::sub(Point p1, Point p2) {
-	int x = p1.x - p2.x;
-	int y = p1.y - p2.y;
-	return Point(x, y);
+Point Point::sub(Point point) {
+	int x1 = x - point.x;
+	int y1 = y - point.y;
+	return Point(x1, y1);
 }
 
-Point Point::mul(Point p1, int value) {
-	int x = p1.x * value;
-	int y = p1.y * value;
-	return Point(x, y);
+Point Point::mul(int value) {
+	int x1 = x * value;
+	int y1 = y * value;
+	return Point(x1, y1);
 }

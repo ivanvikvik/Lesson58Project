@@ -8,14 +8,14 @@ int main() {
 	cout << p1.info() << endl;
 	cout << p2.info() << endl;
 
-	Point p3 = p1.sum(p1, p2);
-	cout << p2.info() << endl;
+	Point p3 = p1.sum(p2);			// p1 + p2
+	cout << p3.info() << endl;
 
-	p3 = p1.sub(p1, p2);
+	p3 = p1.sub(p2);				// p1 - p2
 	cout << p3.info() << endl;
 
 	//p3 = -p1;
-	p3 = p1.mul(p1, 3);
+	p3 = p1.mul(3);					// p1 * 3
 	cout << p3.info() << endl;	
 
 
