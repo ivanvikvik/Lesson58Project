@@ -27,3 +27,21 @@ string Point::info() {
 		+ ", y = " + to_string(y);
 	return msg;
 }
+
+Point Point::sum(Point p1, Point p2) {
+	int x = p1.x + p2.x;
+	int y = p1.y + p2.y;
+	return Point(x, y);
+}
+
+Point Point::sub(Point p1, Point p2) {
+	int x = p1.x - p2.x;
+	int y = p1.y - p2.y;
+	return Point(x, y);
+}
+
+Point Point::mul(Point p1, int value) {
+	int x = p1.x * value;
+	int y = p1.y * value;
+	return Point(x, y);
+}
