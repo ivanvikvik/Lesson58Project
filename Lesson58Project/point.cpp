@@ -25,4 +25,5 @@ void Point::set_y(int value) {
 string Point::info() {
 	string msg = "Point: x = " + to_string(x)
 		+ ", y = " + to_string(y);
+	return msg;
 }
